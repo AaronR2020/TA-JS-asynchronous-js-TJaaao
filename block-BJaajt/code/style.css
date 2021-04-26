@@ -1,0 +1,78 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(225, 245, 206);
+}
+.header{
+    height: 4rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+}
+.top{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+input{
+    margin: 2rem;
+    width: 300px;
+    padding: 10px;
+}
+.userImg{
+border: 1px solid black;
+width: 100px;
+height: 100px;
+border-radius: 100%;
+}
+.userName{
+    padding-top: 20px;
+    margin: 0;
+}
+.handle{
+    margin: 0;
+    padding-bottom: 20px;
+}
+.followers{
+    display: flex;
+    align-items: center;
+}
+.followers>img{
+    border-radius: 100%;  
+    margin: 10px; 
+}
+.following{
+    display: flex;
+    align-items: center;
+}
+.following>img{
+    border-radius: 100%;  
+    margin: 10px; 
+}
+h6{
+    font-size: 40px;
+    margin: 5vh;
+    padding:0;
+    text-align: center;
+    
+}
+.cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.carPic{
+    width: 300px;
+    height: 250px;
+}
+button{
+    margin-bottom: 10vh;
+}
