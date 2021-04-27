@@ -1,0 +1,25 @@
+body{
+    box-sizing: border-box;
+}
+img{
+    width: 200px;
+    margin: 10px;
+    height: 250px;
+    object-fit: contain;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 300px;
+    padding: 10px;
+}
