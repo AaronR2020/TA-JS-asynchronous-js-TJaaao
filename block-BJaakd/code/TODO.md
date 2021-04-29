@@ -1,19 +1,30 @@
 1. Create a promise. Have it resolve with a value of `Promise Resolved!` in resolve after a delay of 1000ms, using `setTimeout`. Print the contents of the promise after it has been resolved by passing `console.log` to `.then`
 
 ```js
-// Your code
+const p1=new Promise((res,rej)=>{
+    setTimeout(res(),1000);
+});
+
+p1.then(console.log('Promise Resolved'))
 ```
 
 2. Create another promise. Now have it reject with a value of `Rejected Promise!` without using `setTimeout`. Print the contents of the promise after it has been rejected by passing console.log to `.catch`
 
 ```js
-// Your code
+const p2=new Promise((res,rej)=>{
+    rej()
+});
+
+p1.carch(console.log('Promise rejected'))
 ```
 
 3. Create another promise. Now have it reject with a value of `Rejected Promise!` without using `setTimeout`. Print the contents of the promise after it has been rejected by passing console.log to `.catch` and also use `.finally` to log message `Promise Settled!`.
 
 ```js
-// Your code
+const p3=new Promise((res,rej)=>{
+    rej()
+})
+p3.catch(console.log("promise rejected")).finally('Promise settled!')
 ```
 
 4. What will be the output of the code below.
@@ -28,12 +39,21 @@ setTimeout(() => console.log('B'), 0); // callback queue
 Promise.resolve().then(() => console.log('C'));
 
 console.log('D');
+
+//output>A D C B
 ```
+
 
 5. Write a function named `wait` that accepts `time` in ms returns a promise. The promise gets resolved after given time.
 
 ```js
-// Your code
+function wait(time){
+    return new Promise((res,rej)=>{
+        res(time)
+    })
+}
+
+wait(1000).then(tim=>console.log(tim));
 ```
 
 6. Do the following:
@@ -46,7 +66,16 @@ console.log('D');
 - Catch the error using `.catch`
 
 ```js
-// Your code
+let val=new Promise((res,rej)=>{
+    res(21)
+})
+val.then(val=>val+10).then(val=>val+100).then(val=>{
+    if(val>100){
+       throw new Error("above 100")
+    }
+}
+
+).catch(e=>console.log(e))
 ```
 
 7. Do the following:
