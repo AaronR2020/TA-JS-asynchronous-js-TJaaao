@@ -1,0 +1,55 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: whitesmoke;
+}
+header{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h2{
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 2.5px;
+}
+.selector{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+select{
+    width: 200px;
+    padding: 10px;
+}
+
+ul{
+    margin: 0;
+    padding: 0 5vw;
+
+}
+li{
+    display: block;
+    margin: 10px;
+}
+.block{
+    display: flex;
+    background-color: rgb(237, 238, 234);
+}
+.block img{
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 2vw;
+}
+.content button{align-self: stretch; border: none; font-size: 24px;}
