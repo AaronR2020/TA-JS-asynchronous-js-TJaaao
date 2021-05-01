@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+ul{
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    margin: 0;
+}
+li{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;   
+    border-radius: 5px;
+}
+header h2{
+    text-align: center;
+    color: blanchedalmond;
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+}
